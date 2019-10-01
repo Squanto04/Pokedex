@@ -8,22 +8,32 @@
 
 import Foundation
 
-struct TopLevelDictionary {
+struct TopLevelDictionary: Decodable {
+    
+    private enum CodingKeys: String, CodingKey {
+        case abilities
+        case name
+        case id
+        case spriteDictionary = "sprites"
+    }
+    
     let name: String
     let id: Int
     let spriteDictionary: SpriteDictionary
-    let abilityDictionary: [AbilityDictionary]
+    let abilities: [AbilitiesDictionary]
 }
 
-struct SpriteDictionary {
-    let imageName: String
+struct SpriteDictionary: Decodable {
+    private enum CodingKeys: String, CodingKey {
+        case image = "front_shiny"
+    }
+    let image: URL
 }
 
-struct AbilityDictionary {
+struct AbilitiesDictionary: Decodable {
     let ability: Ability
 }
 
-struct Ability {
-    let abilityName: String
-    let abilityURL: String
+struct Ability: Decodable {
+    let name: String
 }
