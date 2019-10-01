@@ -13,6 +13,7 @@
 		358F57C72343B999008F3A06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358F57C52343B999008F3A06 /* LaunchScreen.storyboard */; };
 		358F57D12343B9D7008F3A06 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F57D02343B9D7008F3A06 /* Pokemon.swift */; };
 		358F57D62343BAF9008F3A06 /* Pokemon Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F57D52343BAF9008F3A06 /* Pokemon Controller.swift */; };
+		358F57D92343D0CB008F3A06 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F57D82343D0CB008F3A06 /* PokemonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		358F57C82343B999008F3A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		358F57D02343B9D7008F3A06 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		358F57D52343BAF9008F3A06 /* Pokemon Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pokemon Controller.swift"; sourceTree = "<group>"; };
+		358F57D82343D0CB008F3A06 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PokemonViewController.swift; path = "Pokedex/View Controllers/PokemonViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				358F57CF2343B9CD008F3A06 /* Models */,
 				358F57D22343BADC008F3A06 /* Model Controllers */,
+				358F57DA2343D0D1008F3A06 /* View Controllers */,
 				358F57D72343BB05008F3A06 /* Views */,
 				358F57CE2343B9A8008F3A06 /* Resources */,
 			);
@@ -97,6 +100,14 @@
 				358F57C02343B998008F3A06 /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		358F57DA2343D0D1008F3A06 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				358F57D82343D0CB008F3A06 /* PokemonViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			files = (
 				358F57BD2343B998008F3A06 /* AppDelegate.swift in Sources */,
 				358F57D62343BAF9008F3A06 /* Pokemon Controller.swift in Sources */,
+				358F57D92343D0CB008F3A06 /* PokemonViewController.swift in Sources */,
 				358F57D12343B9D7008F3A06 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
